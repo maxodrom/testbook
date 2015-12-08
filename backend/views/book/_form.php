@@ -52,6 +52,8 @@ use dosamigos\datepicker\DatePicker;
 
     <?= $form->field($model, 'preview')->fileInput() ?>
 
+    <?= Html::hiddenInput('referer', null !== Yii::$app->request->getReferrer() ? Yii::$app->request->getReferrer() : null) ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Обновить',
             ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

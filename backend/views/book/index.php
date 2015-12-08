@@ -138,7 +138,8 @@ $this->registerJs(
                             ]),
                             [
                                 'class' => 'btn btn-default',
-                                'title' => 'редактирование книги'
+                                'title' => 'редактирование книги',
+                                'target' => '_blank'
                             ]);
                     },
                     'delete' => function($url, $model, $key) {
