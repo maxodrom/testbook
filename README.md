@@ -28,4 +28,5 @@
 composer update
 ```
 в корневой директории проекта.
-- Для управления книгами перейти на страницу: http://testbook-backend.loc/book
+- Работа по управлению книгами происходит в backend на странице: http://testbook-backend.loc/book
+- Требования: PHP5.5+, Mysql5.5+, Yii2, Composer, bower
