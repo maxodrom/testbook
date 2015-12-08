@@ -7,7 +7,6 @@
 - Создать виртуальные хосты для backend и fronend (например, так):
 ```
 <VirtualHost *:80>
-    ServerAdmin max@maxodrom.ru
     DocumentRoot "C:/Program Files (x86)/Apache24/htdocs/testbook.loc/backend/web"
     ServerName testbook-backend.loc
 	ServerAlias www.testbook-backend.loc
@@ -15,7 +14,6 @@
     CustomLog "logs/testbook-backend.loc-access.log" common
 </VirtualHost>
 <VirtualHost *:80>
-    ServerAdmin max@maxodrom.ru
     DocumentRoot "C:/Program Files (x86)/Apache24/htdocs/testbook.loc/frontend/web"
     ServerName testbook-frontend.loc
 	ServerAlias www.testbook-frontend.loc
