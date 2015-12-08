@@ -1,6 +1,8 @@
 Установка
 =========
 
+![](https://github.com/maxodrom/testbook/blob/master/booksapp.png)
+
 - Склонировать репозиторий
 - Создать виртуальные хосты для backend и fronend (например, так):
 ```
