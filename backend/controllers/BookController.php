@@ -17,6 +17,7 @@ use yii\imagine\Image;
 use Imagine\Image\Point;
 use Imagine\Image\ImageInterface;
 use Imagine\Image\Box;
+use yii\filters\AccessControl;
 
 /**
  * BookController implements the CRUD actions for Book model.
@@ -26,6 +27,22 @@ class BookController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => [
+                            'index',
+                            'create',
+                            'update',
+                            'delete',
+                            'view'
+                        ],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class'   => VerbFilter::className(),
                 'actions' => [
