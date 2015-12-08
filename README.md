@@ -32,3 +32,4 @@ composer update
 в корневой директории проекта.
 - Работа по управлению книгами происходит в backend на странице: http://testbook-backend.loc/book
 - Требования: PHP5.5+, Mysql5.5+, Yii2, Composer, bower
+- Логин и пароль для входа в backend: admin и 123456 соответственно. 
