@@ -2,7 +2,7 @@
 =========
 
 - Склонировать репозиторий
-- Создать виртуальные хосты для backend и fronend:
+- Создать виртуальные хосты для backend и fronend (например, так):
 ```
 <VirtualHost *:80>
     ServerAdmin max@maxodrom.ru
@@ -22,4 +22,10 @@
 </VirtualHost>
 ```
 - Импорт БД из файла testbook.sql
+- Настроить корректное соединение с БД в файле common/config/main.php
+- При необходимости выполнить: 
+``` 
+composer update
+```
+в корневой директории проекта.
 - Для управления книгами перейти на страницу: http://testbook-backend.loc/book
