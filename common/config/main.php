@@ -11,6 +11,12 @@ return [
             'username' => 'root',
             'password' => '123',
             'charset' => 'utf8',
+            'enableSchemaCache' => true,
+            'schemaCacheDuration' => 604800, // week
+            'schemaCache' => 'cache',
+        ],
+        'util' => [
+            'class' => 'common\components\Util'
         ],
     ],
 ];
