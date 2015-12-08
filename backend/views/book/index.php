@@ -30,6 +30,10 @@ $monthes = [
     12 => 'декабря'
 ];
 
+$this->registerCss(
+    '#cboxLoadedContent {padding: 10px;}'
+);
+
 /*$this->registerAssetBundle(ColorboxAsset::className());
 $this->registerJs(
     "
@@ -120,7 +124,7 @@ $this->registerJs(
                                 'book/view', 'id' => $model->id
                             ]),
                             [
-                                'class' => 'btn btn-default',
+                                'class' => 'btn btn-default cbox',
                                 'title' => 'просмотр книги'
                             ]
                         );
